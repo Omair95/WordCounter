@@ -1,0 +1,8 @@
+You need to find the word frequency of every word inside the text of all the books in a library (i.e. for each word, a word count). 
+You can assume that the text for each book will be inside a single file in English, ASCII format  using Latin alphabet, and that 
+it will be formatted with line breaks for each line end/ page end (Linux format). For simplicity, we’ll assume that any whitespace 
+is the word delimiter, and we won’t consider punctuation. (e.g. “don’t” is the same as “dont”). There will be a single fille called 
+“index.txt” that contains the list of file names to process. There are no page numbers etc. Just pure text. You must utilize as many
+ cores of the CPU as possible, let’s say for this example that the CPU has 16 cores. The process will collect the word statistics in 
+ memory as it processes the files. You will process 1 file per core at a time. You can output to console, or file. You will use a 
+ single in memory object to collate the statistics as the counting happens Realtime. You will print the top 500 words at the end.
