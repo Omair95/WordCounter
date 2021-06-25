@@ -68,11 +68,7 @@ public class MainClass {
 		// Thread for statistics purposes
 		executorService.execute(new WordCounterStatistics());
 		
-		// Threads to read books listed inside the index.txt file
-		List<Future<?>> readerThreads = new ArrayList<Future<?>>();
-		
 		while (indexScanner.hasNext()) {
-				
 			
 			String bookName = indexScanner.next();
 			executorService.execute(new WordCounterReader(bookName));
