@@ -8,6 +8,11 @@
 *.ear
 *.nar
 hs_err_pid*
+.project
+.settings
+bin/
+.classpath
+.project
 
 ##############################
 ## Maven
